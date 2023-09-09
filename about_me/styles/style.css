@@ -1,0 +1,43 @@
+body{
+    max-width: 1200px;
+    padding: 50px;
+/*     border: 1px solid black; */
+    font-size:large;
+}
+
+img{
+    width: 400px;
+    padding-right: 40px;
+}
+
+.cont0{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding: 0;
+}
+
+.cont1{
+    
+    width: fit-content;
+    float: left;
+ /*    border: 1px solid black; */
+}
+
+.cont2{
+    /* width: 50%; */
+    float: right;
+    padding-top: 0;
+/*     border: 1px solid black; */
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 11px;
+
+}
+
+h3{
+    margin-top: 0;
+}
+
