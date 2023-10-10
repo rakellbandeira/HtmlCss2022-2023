@@ -1,10 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&family=Open+Sans:wght@300;700&display=swap');
 
 body{
     background-color: #fcfbfb;
+    font-family: 'Mali', 'Open Sans', sans-serif; 
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -20,10 +22,15 @@ header{
     width: 80px;
 }
 
+#logo_link{
+    padding-top: 5px;
+}
+
 nav a{
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover{
@@ -33,6 +40,10 @@ nav a:hover{
 
 .home-title{
     color:aqua;
+    font-family: 'Mali', 'Open Sans', sans-serif; 
+    font-size: 2em;
+    margin-top: 10px;
+
 }
 
 #hero-img{
@@ -41,6 +52,10 @@ nav a:hover{
 
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+}
+
+h2{
+    margin: 0;
 }
 
 h4{
@@ -55,8 +70,13 @@ main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 
 #background{
@@ -67,11 +87,16 @@ main section{
     background-color: #396E94;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+
 }
 
 .book:hover, .join:hover{
     background-color: #ede7a3;
     color: #396E94;
+    margin-top: 50px;
 }
 
 #background{
@@ -80,19 +105,34 @@ main section{
 
 .msg{
     background-color: bisque;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2{
     color:#000;
+    font-family: 'Mali', 'Open Sans', sans-serif; 
 }
 
 .msg p{
     color: #000;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: solid 10px black;
 }
 
 footer{
     background-color: #396E94;
     color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a{
@@ -111,3 +151,7 @@ footer p{
 footer p a:hover{
     text-decoration: underline;
 }
+
+footer .social img{
+    padding-top: 15px;
+}   
