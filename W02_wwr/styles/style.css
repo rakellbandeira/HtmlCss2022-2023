@@ -175,7 +175,7 @@ main section img{
 }
 
 .msg{
-    background-color: rgb(184, 123, 26);;
+    background-color: rgb(184, 123, 26);
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
