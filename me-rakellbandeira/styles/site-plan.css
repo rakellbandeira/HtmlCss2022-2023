@@ -58,7 +58,7 @@ h2 {
 
 h3{
     font-family: var(--subheading-font);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1em;
 }
 
@@ -127,8 +127,9 @@ nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   height: 77px;
+  font-family: var(--subheading-font);
 
 }
 nav  {
