@@ -10,9 +10,11 @@ body{
 }
 
 header{
-    background-color: rgba(27, 242, 235, 0.082);
+    background-color: rgba(27, 242, 235, 0.123);
     display: grid;
     grid-template-columns: 150px auto;
+    grid-gap:100px;
+    padding: 0 80px;
 }
 
 #content{
@@ -21,7 +23,7 @@ header{
 }
 
 .logo{
-    width: 80px;
+    width: 77px;
 }
 
 #logo_link{
@@ -33,26 +35,30 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav a{
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 35px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    align-self: end;
+    font-size: 20px;
+    transition: 0.4s;
 }
 
 nav a:hover{
-    background-color: #12aff2;
+    background-color: #0483ba;
     color: rgb(255, 255, 255);
 }
 
 .home-title{
     color:rgb(109, 176, 207);
     font-family: 'Mali', 'Open Sans', sans-serif; 
-    font-size: 2em;
-    margin-top: 10px;
+    font-size: 3.8em;
+    margin: 10px 0;
     padding: 0;
 
 }
@@ -75,14 +81,18 @@ nav a:hover{
 
 #hero-msg{
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/3;
     margin-top: 200px;
 }
 
 #hero-msg h4{
     color: white;
+    font-size: 1.5em;
+    font-family: 'Open Sans';
+    margin: 15px 15px 44px 15px;
 
 }
+
 
 #hero-msg h1, #hero-msg h4{
     text-align: center;
@@ -120,17 +130,38 @@ main section img{
     font-size: 18px;
     padding: 15px 30px;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px #5b4431;
+    margin: 20px;
+}
+
+.mainbutton{
+    font-size: 25px;
+    color: white;
+/*     background-color: rgb(207, 102, 22); */
+    background: linear-gradient(0deg, rgba(180,145,70,0.86) 0%, rgba(184,123,26,1) 47%); 
+    
+/*     background: radial-gradient(circle, rgba(253,137,45,1) 0%, rgba(180,145,70,1) 100%);
+ */ box-shadow: 5px 3px 10px #1e2116;
+    transition: 0.5s;
 
 }
 
 .book:hover, .join:hover{
-    background-color: #ede7a3;
-    color: #396E94;
+    background-color: rgb(234, 217, 169);
+    
     margin-top: 50px;
+    color: rgb(184, 123, 26);
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.mainbutton:hover{
+    color: white;
+    font-size: 25.5px;
 }
 
 #background{
-    background-color: rgb(231, 216, 181);
+    background-color: #A59D6B61;
     grid-column: 1/11;
     grid-row: 4/9;
     height: 725px;
@@ -139,10 +170,12 @@ main section img{
 .home-grid{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    background: linear-gradient(0deg, rgba(255,255,255,0.7859476554293592) 0%, rgba(70,176,180,0.44981320164784666) 32%, rgba(255,255,255,1) 79%);    
+    padding-bottom: 200px;
 }
 
 .msg{
-    background-color: rgb(100, 105, 95);
+    background-color: rgb(184, 123, 26);;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
@@ -191,7 +224,7 @@ main section img{
 }
 
 .card-img{
-    border: solid 10px black;
+    border: solid 10px rgb(101, 73, 27);
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -201,27 +234,28 @@ main section img{
     transform: scale(1.1);
 }
 
-
+.cards-title{
+    color: rgb(47, 29, 1);
+}
 
              
 
 footer{
-    background-color: rgb(100, 105, 95);;
-    color: white;
+    background-color: rgba(109, 176, 207, 0.049);
+    color: rgb(138, 85, 1);
     padding: 25px 50px;
-    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 footer a{
-    color: #ede7a3;
+    color: rgb(138, 85, 1);
     text-decoration: none;
 }
 
 footer a:hover{
-    color: #ede7a3;
+    color: #c67417;
 }
 
 footer p{
@@ -233,6 +267,8 @@ footer p a:hover{
 }
 
 footer .social img{
+    height: 50px;
+    
     padding-top: 15px;
 }   
 
@@ -244,25 +280,37 @@ footer .social img{
     #hero, .home-grid {
         display: block;
         height: auto;
+        position: relative;
     }
     nav, footer {
         flex-direction: column;
+
     }
     nav a {
         display: block;
         padding: 15px;
     }
     #hero {
-        margin-top: 0;
+        margin-top: -250px;
+        z-index: -1;
     }
     #hero-msg {
         margin-top: 0;
     }
 
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
+        .home-title {
+        font-size: 3em;
+        color: rgb(109, 176, 207);
     }
+
+    #hero-msg h4{
+    color: rgb(47, 29, 1);
+}
+
+    .home-grid{
+        margin-top: 142px;
+    }
+
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
