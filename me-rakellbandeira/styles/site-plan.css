@@ -28,6 +28,16 @@ Fonts are separated by a | */
 }
 
 
+/* Adjusting the img positioning */
+
+.img-box{
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+}
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
