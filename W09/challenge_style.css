@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(13, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/*     align-items: center; */
+   /*  justify-items: center; */
+/*     align-self: center; */
+/*     justify-self: center; */
+/*     align-content: center; */
+/*     justify-content: center; */
+
+
+}
+
+.canva{
+
+    margin: 10px 0 10px 0;
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.canva img{
+    
+    width: 100%;
+
+   
+}
+
+.text{
+    border: 1px solid blue;
+    display: flex;
+    width: 250px;
+    /* align-items: center; */
+    /* justify-items: center; */
+/*     align-self: center;
+/*   justify-self: center; */ 
+/*    align-content: center;
+ */   /*  justify-content: center; */
+}
+
+footer{
+    border: 1px solid red;
+    height: 100px;
+    display: grid;
+    background-color: rgb(51, 81, 130);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    overflow: auto;
+
+}
+
+footer div{
+    display: grid;
+    border-right: 2px solid rgb(51, 58, 72);
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+footer h3{
+
+}
