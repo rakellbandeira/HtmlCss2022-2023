@@ -230,7 +230,7 @@ header{
 
 
 footer{
-    background-color: black;
+    background-color: rgb(35, 35, 35);
     color: white;
     width: 100wh;
     height: 90vh;
@@ -253,7 +253,7 @@ footer{
 }
 
 #foot-col1 h1{
-    font-size: 2.5em;
+    font-size: 2.8em;
     padding: 20px 0;
 }
 
@@ -268,10 +268,12 @@ footer a{
 }
 
 #foot-col2{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 50%;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-left: 25px;
+    justify-self: center;
  /*    border: solid 1px yellowgreen; */
     
 }
@@ -279,6 +281,8 @@ footer a{
 #foot-col2 a{
     text-decoration: none;
     color: white;
+    padding: 20px;
+
 
 }
 
