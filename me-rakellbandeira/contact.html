@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- directly copied from the site-plan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,400&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Rakell Bandeira Developer - Contact</title>
+</head>
+<body>
+    <!-- header is a flex container. Logo to the left and nav bar to the right.
+    Nav bar is a flex inside itself. All the links positioned in ALL AROUND VALUE. -->
+    <header> 
+        <a href="homepage.html"><img src="imgs//rakellbandeira.png"></a>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+            
+        <div id="feedback"></div>
+        
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" value="Name, please"/>
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" value="Your best email here" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message">Tell me more about your project</textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+              
+            </ul>
+          </form>
+          
+        
+    </main>
+    
+    <footer>
+        <div> 
+            <h3>Get in touch</h3>
+            <h1>hello@rbandeira.com</h1>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="portfolio.html">Portofolio</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
