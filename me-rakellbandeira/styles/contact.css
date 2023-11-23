@@ -15,6 +15,11 @@
     padding: 20px;
 }
 
+#contact-tit h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
 form{
     width: 100%;
 }

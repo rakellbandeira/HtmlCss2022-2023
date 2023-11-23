@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/contact.css">
     <!-- directly copied from the site-plan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,57 +17,68 @@
 <body>
     <!-- header is a flex container. Logo to the left and nav bar to the right.
     Nav bar is a flex inside itself. All the links positioned in ALL AROUND VALUE. -->
-    <header> 
-        <a href="homepage.html"><img src="imgs//rakellbandeira.png"></a>
-        <nav>
-            <a href="homepage.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact Me</a>
-        </nav>
-    </header>
+    <header id="portheader"> 
+      <a href="homepage.html"><img src="imgs//rakellbandeira.png"></a>
+      <nav id="portnav">
+          <a href="homepage.html">Home</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact Me</a>
+      </nav>
+  </header>
 
-    <main>
-            
+    <main id="contact-main">
+      <div id="contact-content">      
         <div id="feedback"></div>
-        
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" value="Name, please"/>
-              </li>
-              <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" value="Your best email here" />
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message">Tell me more about your project</textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
-              
-            </ul>
+        <div id="contact-tit">
+          <h5>CONTACT FORM</h5>
+          <h1>Get in touch with me</h1>
+        </div>
+        <div id="form-content">
+          <form action="/my-handling-form-page" method="post">
+            
+              <ul>
+                <div id="contact-row-1">
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" value="Enter your name"/>
+                  </li>
+                  <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" value="Enter your email" />
+                  </li>
+                </div>
+                <div id="contact-row-2">
+                  <li>
+                    <label for="msg">Tell me more about your project:</label>
+                    <textarea id="msg" name="user_message">Enter your message</textarea>
+                  </li>
+                  <li>
+                    <button type="submit">SUBMIT</button>
+                  </li>
+                </div>
+              </ul>
           </form>
-          
+        </div>  
+      </div>    
         
     </main>
     
     <footer>
-        <div> 
-            <h3>Get in touch</h3>
-            <h1>hello@rbandeira.com</h1>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-        </div>
-        <div>
-            <a href="homepage.html">Home</a>
-            <a href="portfolio.html">Portofolio</a>
-            <a href="contact.html">Contact Me</a>
-        </div>
+      <div id="foot-col1"> 
+          <img src="imgs/mail.png">
+          <h3>Get in touch</h3>
+          <h1>hello@rbandeira.com</h1>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+      </div>
+      <div id="foot-col2">
+          <a>Siteplan</a>
+          <a href="homepage.html">Home</a>
+          <a href="portfolio.html">Portofolio</a>
+          <a href="contact.html">Contact Me</a>
+      </div>
 
-    </footer>
+  </footer>
 
 </body>
 </html>
