@@ -1,64 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Open+Sans:wght@300;700&display=swap');
 
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
+
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-size: 20px;
+
 }
 
 header{
-    display: grid;
+    display: flex;
     grid-template-columns: 250px auto;
     width: 100%;
     height: 100px;
+    padding: 10px 40px;
 /*     border: 1px solid black;
- */    gap: 200px;
+ */    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
     z-index: 2;
     position: relative;
     background-color: rgba(38, 38, 38, 0.395);
 }
 
-        header a{    
+        /* header a{    
             grid-column: 1/2;
 
-        }
+        } */
 
-        .logo-box{
-            width: 150px;
+        .logo{
+            width: 200px;
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+            top:-10px;
         }
 
         header img{
-            width: 126px;
+            width: 200px;
             padding-left: 50px;
         }
 
-        nav{
+        .menu{
+            align-items: center;
             display: flex;    
             justify-content: space-around;
+            align-items: center;
+            position: relative;
             padding-top: 50px;
+            /* border: solid 1px red; */
+            width: 500px;
         
         }
 
-        nav a{
+        .menu-link{
+            display: block;
             text-decoration: none;
             color: white;
+            position: relative;
             font-size: 1.1em;
         }
 
+        .menu-link::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            right: 0;
+            background-color: #ffffff;
+            transition: all 0.5s linear;
+          }
+          .menu-link:hover::before {
+            right: auto;
+            width: 100%;
+            left: 0;
+          }
+          .burger {
+            display: none;
+          }
+
+        
 
 .hero{
+    display: grid;
     max-width: 100%;
-    margin-top: -111px;
+    margin-top: -125px;
     height: 110vh;
     overflow: hidden;
-    display: grid;
+   
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr;
     color: white;
+    z-index: 0;
+    
     /* position: relative; */
 }
 
@@ -290,3 +332,70 @@ footer a{
 
 }
 
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+      position: absolute;
+      top: 25px;
+      left: 75%;
+      transform: translateX(-50%);
+      flex-direction: column;
+      gap: 15px;
+      padding: 40px 0 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-color: white;
+      background-color: rgba(38, 38, 38, 0.395);
+      box-shadow: 0 0 5px 2px #272727;
+      z-index: -1;
+      padding: 25px;
+    }
+    .menu.active {
+      display: flex;
+      width: 40%;
+    }
+    .burger {
+      display: flex;
+      position: relative;
+      width: 30px;
+      height: 23px;
+      transition: all 0.3s ease-in-out;
+    }
+    .burger span {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: white;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+    }
+    .line-1 {
+      top: 0;
+    }
+    .line-2 {
+      top: 10px;
+    }
+    .line-3 {
+      top: 20px;
+    }
+    .burger.active .line-1 {
+      top: 10px;
+      transform: rotate(135deg);
+    }
+    .burger.active .line-2 {
+      opacity: 0;
+      left: -40px;
+    }
+    .burger.active .line-3 {
+      top: 10px;
+      transform: rotate(-135deg);
+    }
+  }

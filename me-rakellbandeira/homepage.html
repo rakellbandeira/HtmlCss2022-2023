@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/home.css">
+    <!-- Link to the hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- directly copied from the site-plan -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,16 +19,21 @@
     <!-- header is a flex container. Logo to the left and nav bar to the right.
     Nav bar is a flex inside itself. All the links positioned in ALL AROUND VALUE. -->
     <header> 
-        <div class="logo-box">
+        <div class="logo">
             <a href="homepage.html"><img src="imgs//rakellbandeira.png"></a>
         </div>
-        <nav>
-            <a href="homepage.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact Me</a>
+        <nav class="menu">
+            <a href="homepage.html" class="menu-link">Home</a>
+            <a href="portfolio.html" class="menu-link">Portfolio</a>
+            <a href="contact.html" class="menu-link">Contact Me</a>
         </nav>
+        <div class="burger">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </div>
     </header>
-
+    
     <!-- hero -->
     <div class="hero">
         <img src="imgs/woman-designer-using-computer.jpg">
@@ -99,5 +106,6 @@
 
     </footer>
 
+    <script src="./app.js"></script>
 </body>
 </html>
